@@ -61,7 +61,7 @@ body {
     /* height: 48rem; */
     width: 80%;
     margin: 0 auto;
-    padding: 2rem 1.6rem;
+    padding: 2rem 1.6rem 4rem;
     overflow-y: scroll;
     position: relative;
 }

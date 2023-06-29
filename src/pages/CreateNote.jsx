@@ -2,6 +2,7 @@ import {Link} from "react-router-dom"
 import {IoIosArrowBack} from "react-icons/io"
 
 const CreateNote = () => {
+  const [title, setTitle] = useState()
   return (
     <section>
       <header className='create-note__header'>
