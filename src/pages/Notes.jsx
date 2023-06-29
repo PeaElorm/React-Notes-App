@@ -1,28 +1,21 @@
 import { useState } from "react";
 import { BsSearchHeart } from "react-icons/bs";
-import dummyNotes from "../dummyNotes";
 import { Link } from "react-router-dom";
 import { BsPlusLg } from "react-icons/bs";
 import NoteItem from "../components/NoteItem";
-import randomColor from "randomcolor";
 
-const Notes = () => {
-  const [notes, setNotes] = useState([]);
+const Notes = ({notes}) => {
+  //const [note, setNote] = useState([]);
 
-  const generateRandomColor = () => {
-    return randomColor();
-  };
-
-  const createNewNote = () => {
-    const newNote = {
-      id: notes.length + 1,
-      color: generateRandomColor(),
-    };
-    setNotes((prevNotes) => [...prevNotes, newNote]);
-  };
-
+  // const createNewNote = () => {
+  //   const newNote = {
+  //     id: note.length + 1,
+  //     color: generateRandomColor(),
+  //   };
+  //   setNote((prevNote) => [...prevNote, newNote]);
+  // };
   return (
-    <section>
+    <section className="main-container">
       <header className="notes__header">
         <h2>My Notes</h2>
         {/* <input type="text" autoFocus placeholder='keyword...' /> */}
@@ -31,17 +24,16 @@ const Notes = () => {
         </button>
       </header>
       <div className="notes__container">
-        {dummyNotes.map((note) => (
-          <NoteItem
-            key={note.id}
-            note={note}
-            style={{ backgroundColor: generateRandomColor() }}
-          />
-        ))}
+        {notes.map((note) => {
+          return <NoteItem key={note.id} note={note} />;
+        })}
       </div>
-      <Link className="btn add__btn">
+      <Link to="/create-note" className="btn add__btn">
         <BsPlusLg />
       </Link>
+      <footer>
+        <h3>Developed by Perfect Elorm Avugla</h3>
+      </footer>
     </section>
   );
 };

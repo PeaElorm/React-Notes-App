@@ -58,8 +58,9 @@ body {
 
 #app {
     background: var(--color-bg-black);
-    height: 48rem;
-    width: 24rem;
+    /* height: 48rem; */
+    width: 80%;
+    margin: 0 auto;
     padding: 2rem 1.6rem;
     overflow-y: scroll;
     position: relative;
@@ -77,6 +78,26 @@ h2 {
     font-size: 2rem;
 }
 
+footer{
+    background: var(--color-bg-black);
+    margin-top: 1rem;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 22.5rem;
+    height: 10%;
+}
+
+footer h3{
+    position: relative;
+    width: 80%;
+    margin: 1rem auto 0.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15);
+    padding: 0.9rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
 
 
 
@@ -219,5 +240,9 @@ h2 {
         font-size: 1.5rem;
         bottom: 6%;
         right: 2rem;
+    }
+
+    footer{
+        width: 100vw;
     }
 }
