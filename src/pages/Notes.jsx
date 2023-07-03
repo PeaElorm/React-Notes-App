@@ -19,7 +19,7 @@ const Notes = ({notes}) => {
       <header className="notes__header">
         <h2>My Notes</h2>
         {/* <input type="text" autoFocus placeholder='keyword...' /> */}
-        <button className="btn">
+        <button className="btn search-btn">
           <BsSearchHeart />
         </button>
       </header>
@@ -31,9 +31,9 @@ const Notes = ({notes}) => {
       <Link to="/create-note" className="btn add__btn">
         <BsPlusLg />
       </Link>
-      <footer>
+      {/* <footer>
         <h3>Developed by Perfect Elorm Avugla</h3>
-      </footer>
+      </footer> */}
     </section>
   );
 };
