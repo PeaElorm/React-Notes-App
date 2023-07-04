@@ -84,20 +84,15 @@ h2 {
 
 
 footer{
-    background:var(--color-bg-dark);
+    /* background:var(--color-bg-dark); */
     width: 100%;
     /* padding: 2rem 1.6rem 4rem; */
     overflow-y: scroll;
     height: 5rem;
-    position: absolute;
-    bottom: 0;
-    right: -0.1rem;
-    /* margin: 1rem  auto;
-    padding: 0;
-    position: fixed;
-    bottom: 0;
-    width: 22.5rem;
-    height: 10%; */
+    position: relative;
+    bottom: -15.5rem;
+    right: 1rem;
+    margin-top: 3rem;
 }
 
 footer h3{
