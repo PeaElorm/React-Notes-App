@@ -58,7 +58,9 @@ body {
 
 .search-btn{
     font-size: 2rem;
-    padding-top: 0.5rem;
+    padding-top: 0.8rem;
+    border-radius: 40%;
+    background: none;
 }
 
 #app {
