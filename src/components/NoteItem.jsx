@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const NoteItem = ({ note }) => {
   const predefinedColors = [
-    "#ffcc80",
-    "##ffab91",
-    "#e6ee9b",
-    "#80deea",
-    "#cf93d9",
-    "#f691b3",
+    "#ffc182",
+    "#e3acac",
+    "#e9c4c7",
+    "#ba1bc0",
+    "#436953",
+    "#9592f5",
   ];
 
   const generateRandomColor = () => {
@@ -26,6 +26,7 @@ const NoteItem = ({ note }) => {
       <h4>
         {note.title.length > 40 ? note.title.substr(0, 30) + "..." : note.title}
       </h4>
+      <p>{note.details.length > 20 ? note.details.substr(0, 20) + "..." : note.details}</p>
       <p>{note.date}</p>
     </Link>
   );

@@ -31,9 +31,6 @@ const Notes = ({notes}) => {
       <Link to="/create-note" className="btn add__btn">
         <BsPlusLg />
       </Link>
-      {/* <footer>
-        <h3>Developed by Perfect Elorm Avugla</h3>
-      </footer> */}
     </section>
   );
 };

@@ -63,12 +63,11 @@ body {
 
 #app {
     background: var(--color-bg-black);
-    /* height: 48rem; */
-    width: 80%;
-    margin: 0 auto;
+    height: 48rem;
+    width: 24rem;
     padding: 2rem 1.6rem 4rem;
     overflow-y: scroll;
-    /* position: relative; */
+    position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -85,12 +84,14 @@ h2 {
 
 
 footer{
-    background: var(--color-bg-black);
-     width: 80%;
-    margin: 0 auto;
-    padding: 2rem 1.6rem 4rem;
+    background:var(--color-bg-dark);
+    width: 100%;
+    /* padding: 2rem 1.6rem 4rem; */
     overflow-y: scroll;
     height: 5rem;
+    position: absolute;
+    bottom: 0;
+    right: -0.1rem;
     /* margin: 1rem  auto;
     padding: 0;
     position: fixed;
@@ -100,8 +101,7 @@ footer{
 }
 
 footer h3{
-    position: relative;
-    width: 80%;
+    width: fit-content;
     margin: 1rem auto 0.5rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(15);
@@ -141,10 +141,9 @@ footer h3{
 .notes__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     gap: 1.2rem;
-    margin: 3rem 0 5rem 0;
-    height: 100vh;
+    /* margin: 3rem 0 5rem 0;
+    height: 100vh; */
 }
 
 .empty__notes {
@@ -232,7 +231,7 @@ footer h3{
 @media screen and (max-width: 600px) {
     #app {
         width: 100vw;
-        /* height: 100vh; */
+        height: 100vh;
         padding: 2rem 1rem;
     }
 
@@ -247,6 +246,7 @@ footer h3{
     .notes__container {
         margin-top: 7rem;
         gap: 1rem;
+        /* height: 100vh; */
     }
 
     .btn.add__btn {

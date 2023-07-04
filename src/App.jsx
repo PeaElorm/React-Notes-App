@@ -24,13 +24,16 @@ function App() {
               path="/create-note"
               element={<CreateNote setNotes={setNotes} />}
             />
-            <Route path="/edit-note/:id" element={<EditNote notes={notes} setNotes={setNotes} />} />
+            <Route
+              path="/edit-note/:id"
+              element={<EditNote notes={notes} setNotes={setNotes} />}
+            />
           </Routes>
         </BrowserRouter>
+        <footer>
+          <h3>Developed by Perfect Elorm Avugla</h3>
+        </footer>
       </main>
-      <footer>
-        <h3>Developed by Perfect Elorm Avugla</h3>
-      </footer>
     </div>
   );
 }
