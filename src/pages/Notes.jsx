@@ -45,6 +45,7 @@ const Notes = ({notes}) => {
         </button>
       </header>
       <div className="notes__container">
+        {filteredNotes.length == 0 && <p className="empty__notes">No notes found</p>}
         {filteredNotes.map((note) => {
           return <NoteItem key={note.id} note={note} />;
         })}
